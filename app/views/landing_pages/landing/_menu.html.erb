@@ -3,7 +3,7 @@
     <li class="primary-item">
       <a href="<%= item[:href] %>" class="primary-item-link">
         <label><%= item[:label] %></label>
-        <%- unless mobile_view? %>
+        <%- unless false %>
           <%- if item[:items] %>
             <span class="down"><%= SvgSprite.raw_svg('angle-down') %></span>
             <span class="up"><%= SvgSprite.raw_svg('angle-up') %></span>

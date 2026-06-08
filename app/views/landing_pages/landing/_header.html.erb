@@ -10,13 +10,13 @@
           <%- end %>
         </a>
       </div>
-      <% unless mobile_view? %>
+      <% unless false %>
         <%- if @menu.present? %>
           <%= render partial: "menu" %>
         <%- end %>
       <% end %>
     </div>
-    <% unless mobile_view? %>
+    <% unless false %>
       <%- if local_assigns[:notice].present? %>
         <a class="notice" href="<%= local_assigns[:notice][:href] %>">
           <label class="highlight"><%= local_assigns[:notice][:text] %></label>
@@ -25,7 +25,7 @@
     <% end %>
     <div class="panel">
       <span class='header-buttons'>
-        <% if mobile_view? %>
+        <% if false %>
           <%- if @menu.present? %>
             <a class="mobile-toggle">
               <span class="menu-icon"><%= SvgSprite.raw_svg('bars') %></span>
@@ -48,7 +48,7 @@
   </div>
 </header>
 
-<% if mobile_view? %>
+<% if false %>
   <%- if @menu.present? %>
     <div class="mobile-header">
       <%= render partial: "menu" %>
